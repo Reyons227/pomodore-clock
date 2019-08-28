@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="normalize.css" rel="stylesheet" type="text/css" />
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <section class="wrapper">
+    <div class="header">
+      <h2>Pomodoro Clock</h2>
+    </div>
+
+    <div class="clock-face">
+      <h3 id="workOrBreak">Work</h3>
+      <div>
+        <h1 id="time">25:00</h1>
+      </div>
+    </div>
+
+    <div class="icons">
+      <a href="#"><img id="play" src="images/right.png"/></a>
+      <a href="#"><img id="pause" src="images/pause.png"/></a>
+      <a href="#"><img id="reset" src="images/reset.png"/></a>
+      <a href="#"><img id="stop" src="images/stop.png"/></a>
+    </div>
+
+    <div class="knobs">
+      <div class="work">
+        <h4 id="work-number">Work</h4>
+        <div class="knob-layout">
+          <a href="#" id="work-up"><img src="images/up.png"/></a>
+          <h3 id="update-work-minutes">25</h3>
+          <a href="#" id="work-down"><img src="images/down.png"/></a>
+        </div>
+      </div>
+
+      <div class="break">
+        <h4 id="break-number">Break</h4>
+        <div class="knob-layout">
+          <a href="#" id="break-up"><img src="images/up.png"/></a>
+          <h3 id="break-minutes">5</h3>
+          <a href="#" id="break-down"><img src="images/down.png"/></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <h5>Coded by Reyons Lobo</h5>
+
+  <script src="jquery.js"></script>
+  <script src="script.js"></script>
+</body>

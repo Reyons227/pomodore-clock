@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Marcellus");
+@import url("https://fonts.googleapis.com/css?family=PT+Mono");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  font-family: "Marcellus", serif;
+  text-align: center;
+
+  background-color: #030303;
+}
+
+.wrapper {
+  background-color: white;
+  margin: 0 auto;
+  border: 1px solid rgb(41, 214, 18);
+  border-radius: 12px;
+  box-shadow: 10px 12px 5px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to bottom, white, #ccc);
+}
+
+/*
+
+Header
+
+*/
+
+.header {
+  padding: 20px;
+  width: 450px;
+  text-align: center;
+}
+
+/*
+
+Clock Face
+
+*/
+
+.clock-face {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-face > div {
+  background-color: #014e15;
+  border-radius: 12px;
+  width: 70%;
+  text-align: center;
+}
+
+.icons {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons img:hover {
+  border: 1px solid #ccc;
+}
+
+.icons img {
+  height: 30px;
+  width: 30px;
+  border: 1px solid transparent;
+  padding: -2px;
+}
+
+#workOrBreak {
+  padding-bottom: 15px;
+}
+
+.working {
+  color: rgb(8, 253, 8);
+}
+
+.breakTime {
+  color: red;
+}
+
+/*
+
+Dials
+
+*/
+
+.knobs {
+  border-top: 1px solid black;
+  height: 80px;
+  display: flex;
+  flex: 1;
+}
+
+.knobs > div {
+  width: 50%;
+  text-align: center;
+}
+
+.knob-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 18px;
+  width: 18px;
+}
+
+/*
+
+Typography
+
+*/
+
+h1 {
+  font-size: 70px;
+  font-family: "PT Mono", monospace;
+  margin: 0;
+  padding: 12px;
+  color: white;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: "PT Mono", monospace;
+}
+
+h4 {
+  padding: 9px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 12px;
+  color: white;
+}
+
+a {
+  margin-left: 9px;
+  margin-right: 9px;
+}
+
+#break-minutes,
+#update-work-minutes {
+  width: 50px;
+}
+
+/*
+
+Media
+
+*/
+
+@media all and (max-width: 500px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .header {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #tomato {
+    display: none;
+  }
+}
